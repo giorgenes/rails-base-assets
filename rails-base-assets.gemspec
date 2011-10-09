@@ -7,13 +7,13 @@ require "rails-base-assets/version"
 Gem::Specification.new do |s|
   s.name        = "rails-base-assets"
   s.version     = RailsBaseAssets::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of RailsBaseAssets."
-  s.description = "TODO: Description of RailsBaseAssets."
+  s.authors     = ["Giorgenes Gelatti"]
+  s.email       = ["giorgenes@gmail.com"]
+  s.homepage    = "http://github.com/giorgenes/rails-base-assets"
+  s.summary     = "Basic assets for rails."
+  s.description = "Basic assets for rails."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{app,config,db,lib,vendor}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 3.1.1"
