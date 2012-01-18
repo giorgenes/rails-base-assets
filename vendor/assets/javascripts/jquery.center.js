@@ -11,7 +11,7 @@
                     horizontal:true // booleen, center horizontal
                }, options);
                return this.each(function() {
-                    var props = {position:'absolute'};
+                    var props = {position:'fixed'};
                     if (options.vertical) {
                          var top = ($(options.inside).height() - $(this).outerHeight()) / 2;
                          if (options.withScrolling) top += $(options.inside).scrollTop() || 0;
