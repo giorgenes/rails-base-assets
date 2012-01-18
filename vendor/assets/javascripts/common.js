@@ -1,3 +1,7 @@
+if(vsh_cfg_autoblock_on_ajax == undefined)
+  vsh_cfg_autoblock_on_ajax = true;
+}
+
 function vsh_url_add_params(url, params)
 {
 	var i;
@@ -57,8 +61,10 @@ jQuery(function ($) {
 		var url = vsh_url_add_params($(this).attr('href'), {l: 'empty'})
 		$(vshbase_lsub).load(url);
 	});
-	
-	$(document).ajaxStart($.blockUI).ajaxStop($.unblockUI)
+
+  if(vsh_cfg_autoblock_on_ajax) {
+	  $(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
+  }
 
 	$().ready(function() {
   		$('#jqmContainer').jqm();
