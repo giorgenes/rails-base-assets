@@ -23,7 +23,6 @@ function vsh_popup(url)
 	$.get(url, function(data) {
 		var container = $('#jqmContainer');
 		container.html(data);
-		container.center();
 		container.jqmShow();
 	});
 }
