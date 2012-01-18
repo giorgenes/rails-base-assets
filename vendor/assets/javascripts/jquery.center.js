@@ -24,7 +24,7 @@
                           left = (left > options.minX ? left : options.minX);
                           $.extend(props, {left: left+'px'});
                     }
-                    props[position] = 'fixed';
+                    props.position = 'fixed';
                     if (options.transition > 0) $(this).animate(props, options.transition);
                     else $(this).css(props);
                     return $(this);
