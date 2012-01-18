@@ -1,4 +1,4 @@
-if(vsh_cfg_autoblock_on_ajax == undefined)
+if(vsh_cfg_autoblock_on_ajax == undefined) {
   vsh_cfg_autoblock_on_ajax = true;
 }
 
