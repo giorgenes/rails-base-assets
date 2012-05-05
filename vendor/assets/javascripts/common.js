@@ -1,5 +1,5 @@
-if(vsh_cfg_autoblock_on_ajax == undefined) {
-  vsh_cfg_autoblock_on_ajax = true;
+if(window.vsh_cfg_autoblock_on_ajax == undefined) {
+  window.vsh_cfg_autoblock_on_ajax = true;
 }
 
 function vsh_url_add_params(url, params)
@@ -62,7 +62,7 @@ jQuery(function ($) {
 		$(vshbase_lsub).load(url);
 	});
 
-  if(vsh_cfg_autoblock_on_ajax) {
+  if(window.vsh_cfg_autoblock_on_ajax) {
 	  $(document).ajaxStart($.blockUI).ajaxStop($.unblockUI);
   }
 
